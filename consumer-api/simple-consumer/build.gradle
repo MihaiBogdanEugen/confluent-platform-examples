@@ -1,0 +1,11 @@
+apply plugin: 'application'
+
+mainClassName = 'de.mls.confluent.platform.examples.SimpleConsumerExample'
+
+dependencies {
+    compile "org.apache.kafka:kafka-clients:${kafka_version}"
+    compile "org.slf4j:slf4j-api:${slf4j_version}"
+    compile "org.apache.logging.log4j:log4j-api:${log4j_version}"
+    compile "org.apache.logging.log4j:log4j-core:${log4j_version}"
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:${log4j_version}"
+}
