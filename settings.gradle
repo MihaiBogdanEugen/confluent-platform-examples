@@ -1,0 +1,15 @@
+rootProject.name = 'confluent-platform-examples'
+
+include 'consumer-api:generic-consumer'
+findProject(':consumer-api:generic-consumer')?.name = 'generic-consumer'
+include 'consumer-api:simple-consumer'
+findProject(':consumer-api:simple-consumer')?.name = 'simple-consumer'
+include 'consumer-api:specific-consumer'
+findProject(':consumer-api:specific-consumer')?.name = 'specific-consumer'
+include 'producer-api:generic-producer'
+findProject(':producer-api:generic-producer')?.name = 'generic-producer'
+include 'producer-api:simple-producer'
+findProject(':producer-api:simple-producer')?.name = 'simple-producer'
+include 'producer-api:specific-producer'
+findProject(':producer-api:specific-producer')?.name = 'specific-producer'
+

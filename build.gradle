@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("com.commercehub.gradle.plugin:gradle-avro-plugin:${gradle_avro_plugin_version}")
+    }
+}
+
+allprojects {
+
+    apply plugin: "java"
+    apply plugin: "idea"
+
+    group "de.mls.confluent.platform.examples"
+    version "0.0.1"
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url "http://packages.confluent.io/maven/"
+        }
+    }
+}
+
