@@ -4,16 +4,16 @@ apply plugin: "com.commercehub.gradle.plugin.avro"
 mainClassName = "de.mls.confluent.platform.examples.SpecificProducerExample"
 
 dependencies {
-    compile("io.confluent:kafka-avro-serializer:${confluent_version}") {
+    compile("io.confluent:kafka-avro-serializer:${confluentVersion}") {
         exclude group: 'org.slf4j', module: 'slf4j-log4j12'
     }
-    compile "org.apache.kafka:kafka-clients:${kafka_version}"
-    compile "org.slf4j:slf4j-api:${slf4j_version}"
-    compile "org.apache.logging.log4j:log4j-api:${log4j_version}"
-    compile "org.apache.logging.log4j:log4j-core:${log4j_version}"
-    compile "org.apache.logging.log4j:log4j-slf4j-impl:${log4j_version}"
-    compile "org.apache.kafka:kafka-clients:${kafka_version}"
-    compile "org.apache.avro:avro:${avro_version}"
+    compile "org.apache.kafka:kafka-clients:${kafkaVersion}"
+    compile "org.slf4j:slf4j-api:${slf4jVersion}"
+    compile "org.apache.logging.log4j:log4j-api:${log4jVersion}"
+    compile "org.apache.logging.log4j:log4j-core:${log4jVersion}"
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
+    compile "org.apache.kafka:kafka-clients:${kafkaVersion}"
+    compile "org.apache.avro:avro:${avroVersion}"
 }
 
 avro {
